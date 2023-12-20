@@ -2,7 +2,7 @@
  * Strategy pattern
  *
  * The Strategy Design Pattern is a behavioral design pattern.
- *  It allows you to dynamically change the behavior of an object by encapsulating it into different strategies.
+ *  It allows you to dynamically change the behavioral of an object by encapsulating it into different strategies.
  *  https://www.freecodecamp.org/news/a-beginners-guide-to-the-strategy-design-pattern/
  *
  *  <p>
@@ -11,4 +11,4 @@
  *   - is used when we have multiple algorithms (solutions) for a specific task and the client decides the actual implementation to be used at runtime;
  *  </p>
  */
-package behavior.strategy;
+package behavioral.strategy;

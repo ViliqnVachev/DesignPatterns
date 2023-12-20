@@ -1,8 +1,8 @@
-package behavior.observer;
+package behavioral.observer;
 
-import behavior.observer.subscribers.EmailListener;
-import behavior.observer.subscribers.EventListeners;
-import behavior.observer.subscribers.LoggingListener;
+import behavioral.observer.subscribers.EmailListener;
+import behavioral.observer.subscribers.EventListeners;
+import behavioral.observer.subscribers.LoggingListener;
 
 public class Main {
     public static void main(String[] args) {

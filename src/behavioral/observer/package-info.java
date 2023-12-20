@@ -1,7 +1,7 @@
 /**
  * Observer pattern
  *
- *The Observer Design pattern is a behavioral design pattern.
+ * The Observer Design pattern is a behavioral design pattern.
  * It lets you define a subscription mechanism to notify multiple
  * objects about any events that happen to the object they’re observing.
  * https://refactoring.guru/design-patterns/observer
@@ -16,4 +16,4 @@
  * </p>
  *
  */
-package behavior.observer;
+package behavioral.observer;

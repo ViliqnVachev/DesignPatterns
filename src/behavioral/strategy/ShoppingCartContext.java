@@ -1,6 +1,6 @@
-package behavior.strategy;
+package behavioral.strategy;
 
-import behavior.strategy.algorithms.IPaymentStrategy;
+import behavioral.strategy.algorithms.IPaymentStrategy;
 import java.util.ArrayList;
 import java.util.List;
 

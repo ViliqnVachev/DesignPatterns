@@ -1,6 +1,4 @@
-package behavior.observer.subscribers;
-
-import behavior.observer.subscribers.EventListeners;
+package behavioral.observer.subscribers;
 
 public class EmailListener implements EventListeners {
     private String email;

@@ -1,6 +1,6 @@
-package behavior.observer;
+package behavioral.observer;
 
-import behavior.observer.subscribers.EventListeners;
+import behavioral.observer.subscribers.EventListeners;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

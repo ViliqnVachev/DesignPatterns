@@ -1,4 +1,4 @@
-package behavior.strategy;
+package behavioral.strategy;
 
 public class Product {
     private double price;

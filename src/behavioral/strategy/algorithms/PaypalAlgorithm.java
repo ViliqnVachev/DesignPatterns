@@ -1,4 +1,4 @@
-package behavior.strategy.algorithms;
+package behavioral.strategy.algorithms;
 
 public class PaypalAlgorithm implements IPaymentStrategy {
 

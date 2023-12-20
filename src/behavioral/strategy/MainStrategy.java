@@ -1,7 +1,7 @@
-package behavior.strategy;
+package behavioral.strategy;
 
-import behavior.strategy.algorithms.CreditCardAlgorithm;
-import behavior.strategy.algorithms.PaypalAlgorithm;
+import behavioral.strategy.algorithms.CreditCardAlgorithm;
+import behavioral.strategy.algorithms.PaypalAlgorithm;
 
 public class MainStrategy {
     public static void main(String[] args) {

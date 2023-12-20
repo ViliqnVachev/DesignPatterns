@@ -1,6 +1,6 @@
-package behavior.observer;
+package behavioral.observer;
 
-import behavior.observer.subscribers.EventListeners;
+import behavioral.observer.subscribers.EventListeners;
 
 public interface Publisher {
 
