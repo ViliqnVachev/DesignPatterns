@@ -76,3 +76,4 @@ inside special wrapper objects that contain the behaviors.
 - adds additional functionalities to the object by wrapping it;
 - remember how to create a car with diesel engine and car with petrol engine, or pizza decorator;
 ![Schema](/src/main/assets/images/decorator.png)
+- 
