@@ -1,8 +1,8 @@
 package structural.decorator;
 
-public class IceCreamDecorator implements IIceCream {
+public abstract class IceCreamDecorator implements IIceCream {
 
-    private IIceCream iIceCream;
+    private final IIceCream iIceCream;
 
     public IceCreamDecorator(IIceCream iIceCream) {
         this.iIceCream = iIceCream;

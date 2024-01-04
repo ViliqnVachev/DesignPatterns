@@ -4,10 +4,7 @@ public class Main {
     public static void main(String[] args) {
         IIceCream basicIceCream = new BasicIceCream();
 
-        IIceCream decorator = new IceCreamDecorator(basicIceCream);
-        System.out.println(decorator.cost());
-
-        IIceCream vanilla = new VanillaIceCream(decorator);
+        IIceCream vanilla = new VanillaIceCream(basicIceCream);
         System.out.println(vanilla.cost());
 
         IIceCream chocolate = new ChocolateIceCream(vanilla);
