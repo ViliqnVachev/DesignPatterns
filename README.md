@@ -17,6 +17,7 @@ state changes by calling one of their methods;
 - once the observer gets the notification from the subject, it will call one of the methods of the subject to get the change state data;
 - the other names of this pattern are Producer/Consumer, Publish/Subscribe.
 - the company needs to notify all its shareholders of any decision they make. Here, Company is the Subject, and Shareholders are Observers;
+
 ![Schema](/src/main/assets/images/observer.png)
 
 
@@ -30,6 +31,7 @@ It allows you to dynamically change the behavioral of an object by encapsulating
 - Strategy lets the algorithm vary independently of clients that use it;
 - It is used when we have multiple algorithms (solutions) for a specific task,
 and the client decides the actual implementation to be used at runtime;
+
 ![Schema](/src/main/assets/images/strategy.png)
 
 ### 2. **Creational Design Pattern**
@@ -53,6 +55,7 @@ Once you do it several times, you might discover that the whole thing turned int
 - Static class Factory with method "CreateProduct"- accept the product type and return the whole product;
 - The basic principle behind the factory design pattern is that, at run time, we get an object of similar type based on the parameter we pass;
 
+
 ##### a.2) **Factory Method Pattern**
 The Factory Method is a creation design pattern that provides an interface for creating objects
 but allows subclasses to alter the type of object that will be created.
@@ -62,7 +65,23 @@ If you have a creation method in base class and subclasses that extend it, you m
 - It is used when we need to create the object (i.e., instance of the Product class) without exposing the object creation logic to the client;
 - We will create an abstract class as the VehicleFactory class which will create and return the instance of the product,
 but it will let the subclasses(VWFactory, PeugeotFactory) decide which Product class (VWCaddy, VWPassat) to instantiate;
+
 ![Schema](/src/main/assets/images/factory_method.png)
+
+
+#### b) **Singleton Pattern**
+[For more info](https://refactoring.guru/design-patterns/singleton)
+[For more info](https://www.digitalocean.com/community/tutorials/java-singleton-design-pattern-best-practices-examples)
+
+Singleton is a creational design pattern that lets you ensure that a class has only one instance,
+while providing a global access point to this instance.
+
+- this pattern ensures that a class has only one instance and provides a global point of access to it;
+- always is sealed class with: private static Singleton instance,
+private constructor and one getter-public static Singleton GetInstance (see Standard Singleton);
+- class could have methods, fields or properties;
+
+![Schema](/src/main/assets/images/singleton.png)
 
 ### 3. **Structural Design Pattern**
 
@@ -75,5 +94,5 @@ inside special wrapper objects that contain the behaviors.
 - dynamically changes the functionality of an object at runtime without impacting the existing functionality of the objects;
 - adds additional functionalities to the object by wrapping it;
 - remember how to create a car with diesel engine and car with petrol engine, or pizza decorator;
+
 ![Schema](/src/main/assets/images/decorator.png)
-- 
