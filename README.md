@@ -34,6 +34,22 @@ and the client decides the actual implementation to be used at runtime;
 
 ![Schema](/src/main/assets/images/strategy.png)
 
+
+#### c) **Command Pattern**
+[For more info](https://refactoring.guru/design-patterns/command)
+
+Command is a behavioral design pattern
+that turns a request into a stand-alone object that contains all information about the request.
+This transformation lets you pass requests as a method arguments, delay or queue a request’s execution,
+and support undoable operations.
+
+- is used to encapsulate a request as an object (i.e., a command) and pass to an invoker (remote control);
+- the invoker does now know how to service the request but uses the encapsulated commands to perform an action;
+- the command object also has the Execute method and Undoes;
+
+ ![Schema](/src/main/assets/images/command.png)
+
+
 ### 2. **Creational Design Pattern**
 
 #### a) **Factory Pattern**
