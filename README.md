@@ -112,3 +112,20 @@ inside special wrapper objects that contain the behaviors.
 - remember how to create a car with diesel engine and car with petrol engine, or pizza decorator;
 
 ![Schema](/src/main/assets/images/decorator.png)
+
+#### b) **Adapter Pattern**
+[For more info](https://refactoring.guru/design-patterns/adapter)
+
+Adapter is a structural design pattern that allows objects with incompatible interfaces to collaborate.
+
+- adapter is responsible for communication between two independent or incompatible interfaces;
+- works as a bridge between two incompatible interfaces;
+- example is: HR System (Client) will send the employee information in the form of a String Array to the Adapter and it will read the employee
+  information from the string array and put each employee object into the List<Employee> and then the Adapter will send the List<Employee> to the ProcessSalary method of Third Party Billing System.
+  Then the ProcessSalary method calculates the Salary of each employee and deposits the salary into the Employee’s bank account;
+
+#### Object Adapter
+![Schema](/src/main/assets/images/objAdapter.png)
+
+#### Class Adapter
+![Schema](/src/main/assets/images/classAdapter.png)
