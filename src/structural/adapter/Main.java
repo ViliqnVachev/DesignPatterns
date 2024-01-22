@@ -1,31 +1,43 @@
 package structural.adapter;
 
-import structural.adapter.models.EnemyRobot;
-import structural.adapter.models.EnemyTank;
-import structural.adapter.models.adapter.EnemyRobotAdapter;
-import structural.adapter.target.IEnemyAttacker;
+import structural.adapter.models.Socket;
+import structural.adapter.models.Volt;
+import structural.adapter.models.adapter.SocketAdapter;
+import structural.adapter.models.adapter.SocketAdapterClassImpl;
+import structural.adapter.models.adapter.SocketAdapterObjImpl;
 
 public class Main {
     public static void main(String[] args) {
+        Socket socket = new Socket();
+        SocketAdapter socketAdapterObj = new SocketAdapterObjImpl(socket);
+        Volt volt11 = getVolt(socketAdapterObj, 11);
+        Volt volt110 = getVolt(socketAdapterObj, 110);
+        Volt volt220 = getVolt(socketAdapterObj, 220);
 
-        System.out.println("===== Tank =====\n");
+        System.out.println("Object adapter " + volt11.getVolts());
+        System.out.println("Object adapter " + volt110.getVolts());
+        System.out.println("Object adapter " + volt220.getVolts());
+        System.out.println("============");
 
-        IEnemyAttacker tank = new EnemyTank();
-        tank.assignDriver("Vil");
-        tank.driveForward();
-        tank.fireWeapon();
+        SocketAdapter socketAdapterClass = new SocketAdapterClassImpl();
+        volt11 = getVolt(socketAdapterClass, 11);
+        volt110 = getVolt(socketAdapterClass, 110);
+        volt220 = getVolt(socketAdapterClass, 220);
+        System.out.println("Class adapter " + volt11.getVolts());
+        System.out.println("Class adapter " + volt110.getVolts());
+        System.out.println("Class adapter " + volt220.getVolts());
+    }
 
-        System.out.println("===== Robot =====\n");
-
-        EnemyRobot robot = new EnemyRobot();
-        robot.reactToHuman("Billy");
-        robot.walkForward();
-        robot.smashWithHands();
-
-        System.out.println("===== Adapter Robot =====\n");
-        IEnemyAttacker adapter = new EnemyRobotAdapter(robot);
-        adapter.assignDriver("Adapter Robot");
-        adapter.driveForward();
-        adapter.fireWeapon();
+    private static Volt getVolt(SocketAdapter socketAdapter, int i) {
+        switch (i) {
+        case 11:
+            return socketAdapter.get11Volt();
+        case 110:
+            return socketAdapter.get110Volt();
+        case 220:
+            return socketAdapter.get220Volt();
+        default:
+            return null;
+        }
     }
 }

@@ -1,4 +1,27 @@
 ### IntelliJ IDEA ###
+.settings
+.project
+jautobat.jar
+target/
+/test-output
+/comparison-output
+# Taken from https://www.gitignore.io/api/intellij
+
+### Intellij ###
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio
+
+*.iml
+
+## Directory-based project format:
+.idea/
+
+## File-based project format:
+*.ipr
+*.iws
+
+## Plugin-specific files:
+/out/
+/bin/
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
