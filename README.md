@@ -87,7 +87,11 @@ but it will let the subclasses(VWFactory, PeugeotFactory) decide which Product c
 
 #### b) **Singleton Pattern**
 [For more info](https://refactoring.guru/design-patterns/singleton)
+
 [For more info](https://www.digitalocean.com/community/tutorials/java-singleton-design-pattern-best-practices-examples)
+
+Bill Pugh impl
+[For more info](https://www.baeldung.com/java-bill-pugh-singleton-implementation)
 
 Singleton is a creational design pattern that lets you ensure that a class has only one instance,
 while providing a global access point to this instance.
@@ -129,3 +133,13 @@ Adapter is a structural design pattern that allows objects with incompatible int
 
 #### Class Adapter
 ![Schema](/src/main/assets/images/classAdapter.png)
+
+#### c) **Facade Pattern**
+[For more info](https://refactoring.guru/design-patterns/facade)
+
+Facade is a structural design pattern that provides a simplified interface to a library, a framework, or any other complex set of classes.
+
+- defines a higher-level interface that makes the subsystem easier to use;
+- hides the complexities of the system; *
+
+![Schema](/src/main/assets/images/facade.png)
