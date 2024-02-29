@@ -50,6 +50,33 @@ and support undoable operations.
  ![Schema](/src/main/assets/images/command.png)
 
 
+#### d) **Template method Pattern**
+[For more info](https://refactoring.guru/design-patterns/template-method)
+
+Template Method is a behavioral design pattern that defines the skeleton of an algorithm in the superclass
+but lets subclasses override specific steps of the algorithm without changing its structure.
+
+- defines a sequence of steps of an algorithm and allows the subclasses to override the steps but not allowed to change the sequence;
+- the Key to the Template Design Pattern is that we put the general logic in the abstract parent class and let the child classes define the specifics;
+
+![Schema](/src/main/assets/images/template_method.png)
+
+
+#### e) **Iterator Pattern**
+[For more info](https://refactoring.guru/design-patterns/iterator)
+
+Iterator is a behavioral design pattern that lets you traverse elements of a collection
+without exposing its underlying representation (list, stack, tree, etc.).
+The main idea of the Iterator pattern is to extract the traversal behavior of a collection into a separate object called an iterator.
+
+- the iterator pattern is a design pattern in which an iterator is used to traverse a container ( ist, Array List, Array, etc.)
+  and access the elements of the container;
+- allows sequential access of elements without exposing the inside logic;
+- we can access the elements of a collection object in a sequential manner without any need to know its internal representations;
+
+![Schema](/src/main/assets/images/iterator.png)
+
+
 ### 2. **Creational Design Pattern**
 
 #### a) **Factory Pattern**
