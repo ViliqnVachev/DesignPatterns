@@ -77,6 +77,18 @@ The main idea of the Iterator pattern is to extract the traversal behavior of a 
 ![Schema](/src/main/assets/images/iterator.png)
 
 
+#### f) **State Pattern**
+[For more info](https://refactoring.guru/design-patterns/state)
+
+The State Design pattern is a behavioral design pattern.
+It lets an object alter its behavior when its internal state changes.
+It appears as if the object changed its class.
+
+- allows an object to completely change its behavior depending upon its current internal state;
+- ATM machine behavior is the best example of the State Design Pattern;
+ 
+![Schema](/src/main/assets/images/state.png)
+
 ### 2. **Creational Design Pattern**
 
 #### a) **Factory Pattern**
