@@ -142,6 +142,18 @@ private constructor and one getter-public static Singleton GetInstance (see Stan
 
 ![Schema](/src/main/assets/images/singleton.png)
 
+
+#### c) **Builder Pattern**
+[For more info](https://refactoring.guru/design-patterns/builder)
+
+Builder is a creational design pattern that lets you construct complex objects step by step.
+The pattern allows you to produce different types and representations of an object using the same construction code.
+
+- avoiding multiply parameters in constructors;
+- we need to use Builder Design Pattern when there is multiply constructor in the class or might be expand in the future;
+
+![Schema](/src/main/assets/images/builder.png)
+
 ### 3. **Structural Design Pattern**
 
 #### a) **Decorator Pattern**
