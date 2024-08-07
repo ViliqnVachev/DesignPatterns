@@ -11,5 +11,12 @@ public class Main {
         } catch (IllegalAccessException e) {
             System.out.println(e.getMessage());
         }
+        String a=null;
+        changeVal(a);
+        System.out.println(a);
+    }
+
+    private static void changeVal(String a) {
+        a="84";
     }
 }
