@@ -126,6 +126,16 @@ previous state of an object without revealing the details of its implementation.
 - Caretaker: It is responsible for keeping the mementos. Like maintaining save points and never operates on or examine the contents of a Memento;
 ![Schema](/src/main/assets/images/memento.png)
 
+#### j) **Interpreter Pattern**
+[For more info](https://www.baeldung.com/java-interpreter-pattern)
+
+In short, the pattern defines the grammar of a particular language in an object-oriented way which can be evaluated by the interpreter itself.
+Having that in mind, technically we could build our custom regular expression, a custom DSL interpreter or we could parse any of the human languages,
+build abstract syntax trees and then run the interpretation.
+
+- provides a way to evaluate language grammar or expression;
+- is used in SQL parsing, symbol processing engine, etc.
+
 
 ### 2. **Creational Design Pattern**
 
