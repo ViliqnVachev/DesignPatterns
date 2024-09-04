@@ -102,6 +102,16 @@ The pattern restricts direct communications between the objects and forces them 
 
 ![Schema](/src/main/assets/images/mediator.png)
 
+
+#### h) **Visitor Pattern**
+[For more info](https://refactoring.guru/design-patterns/visitor)
+
+Visitor is a behavioral design pattern that lets you separate algorithms from the objects on which they operate.
+
+- as per the Visitor Design Pattern, the element object (every kid in the school) has to accept the visitor object (doctor, salesman);
+- the visitor object handles the operation on the element object;
+![Schema](/src/main/assets/images/visitor.png)
+
 ### 2. **Creational Design Pattern**
 
 #### a) **Factory Pattern**
