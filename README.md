@@ -279,8 +279,22 @@ a framework, or any other complex set of classes.
 - remember the example with ATM (proxy), client and bank;
 - the Proxy is the object which is being called by the client to access the real object behind the scene;
 - the client will call the method of the Proxy object and the proxy will be responsible to call the method of the Real Object;
-- could interface to anything such as a network connection, a large object in memory, a file, or some other resources that are expensive or                   impossible to duplicate;
-- The Proxy servers can drastically improve the performance of the application. This is because it saves the results of a request for a certain               period of time;
+- could interface to anything such as a network connection, a large object in memory, a file, or some other resources that are expensive or impossible to duplicate;
+- The Proxy servers can drastically improve the performance of the application. This is because it saves the results of a request for a certain period of time;
 - Virtual Proxy, Remote Proxy, Protection Proxy;
-- 
+
 ![Schema](/src/main/assets/images/proxy.png)
+
+#### e) **Bridge Pattern**
+[For more info](https://refactoring.guru/design-patterns/bridge)
+
+Bridge is a structural design pattern that lets you split a large class or a set of closely related classes into two 
+separate hierarchies—abstraction and implementation—which can be developed independently of each other.
+
+- there are two parts: the first part is the abstraction and the second part is the implementation;
+- providing a bridge between abstract class and implementation class - bridge interface;
+- allows the abstraction and implementation to be developed independently;
+- if you want to add a new implementation or if you want to remove any implementation, then it will not affect the Abstraction layer;
+- the client will only use the abstraction to save or delete the object;
+
+![Schema](/src/main/assets/images/bridge.png)
